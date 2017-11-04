@@ -15,23 +15,6 @@ var config = {
 };
 firebase.initializeApp(config);
 
-// var rootRef = firebase.database().ref().child('co');
-// $('#send_co').click(function(){
-//     rootRef.set({
-//         lat:$('#lat').val(),
-//         long:$('#long').val()
-//     });
-// });
-//
-// $('#get_co').click(function(){
-//     rootRef.on('value', function(snapshot){
-//         lat:$('#lat').val(snapshot.child('lat').val());
-//         ln = snapshot.child('lat').val();
-//         long:$('#long').val(snapshot.child('long').val());
-//         lt = snapshot.child('long').val();
-//     })
-// });
-
 //New Markers
 var cabsRef = firebase.database().ref().child('cabs');
 cabsRef.on('value', function(snapshot){
