@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DriverApp</string>
+    <string name="reg_no">Registration Number:</string>
+    <string name="email">Login ID:</string>
+    <string name="pass">Password</string>
+    <string name="track">Log In</string>
+    <string name="title_activity_driver_map">Map</string>
+    <string name="reghint">Enter Registration Number</string>
+    <string name="idhint">Enter Login ID</string>
+    <string name="passhint">Enter Password</string>
+</resources>

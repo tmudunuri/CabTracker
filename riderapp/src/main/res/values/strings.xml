@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RiderApp</string>
+    <string name="logintext">Login ID:</string>
+    <string name="loginpass">Password:</string>
+    <string name="idhint">Enter Login ID</string>
+    <string name="namehint">Enter your name</string>
+    <string name="name">Enter your name</string>
+    <string name="passhint">Enter Password</string>
+    <string name="reentpass">Re-Enter Password</string>
+    <string name="loginbut">SIGN IN</string>
+    <string name="signupbut">SIGN UP</string>
+    <string name="title_activity_rider_map">Rider</string>
+</resources>

@@ -1,0 +1,218 @@
+{
+  "project_info": {
+    "project_number": "963805026473",
+    "firebase_url": "https://linuxbasedtracker.firebaseio.com",
+    "project_id": "linuxbasedtracker",
+    "storage_bucket": "linuxbasedtracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963805026473:android:b5599a8062cdeaf2",
+        "android_client_info": {
+          "package_name": "com.google.transporttracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963805026473-osj6fgolpsk26s2i1tio219tvshie3ib.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.transporttracker",
+            "certificate_hash": "683998bc6ad8b4748d3a59d137cc5a9e0d76a056"
+          }
+        },
+        {
+          "client_id": "963805026473-k7esa517oo1ai271ao2dn9lm0coqt0r5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvrkvOt__TTKo3mrk2MgzHzSrKbtpge-I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963805026473-k7esa517oo1ai271ao2dn9lm0coqt0r5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963805026473:android:f8b2052b991797d9",
+        "android_client_info": {
+          "package_name": "com.example.marzil.googlemapstry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963805026473-9ssd59ekefcv2k0sehibpp0ni1qnvbj9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.marzil.googlemapstry",
+            "certificate_hash": "683998bc6ad8b4748d3a59d137cc5a9e0d76a056"
+          }
+        },
+        {
+          "client_id": "963805026473-k7esa517oo1ai271ao2dn9lm0coqt0r5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvrkvOt__TTKo3mrk2MgzHzSrKbtpge-I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963805026473-k7esa517oo1ai271ao2dn9lm0coqt0r5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963805026473:android:971544659f74741e",
+        "android_client_info": {
+          "package_name": "com.bmsit.marzil.driverapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963805026473-qgf7a80pjk8tjlnrk5mjt2inhnj5nrif.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bmsit.marzil.driverapp",
+            "certificate_hash": "683998bc6ad8b4748d3a59d137cc5a9e0d76a056"
+          }
+        },
+        {
+          "client_id": "963805026473-k7esa517oo1ai271ao2dn9lm0coqt0r5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvrkvOt__TTKo3mrk2MgzHzSrKbtpge-I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963805026473-k7esa517oo1ai271ao2dn9lm0coqt0r5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963805026473:android:5b9d77706b41b903",
+        "android_client_info": {
+          "package_name": "com.bmsit.marzil.testapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963805026473-8bmcnkpk0tjcjrcmn8av6ttodeeldo7d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bmsit.marzil.testapp",
+            "certificate_hash": "683998bc6ad8b4748d3a59d137cc5a9e0d76a056"
+          }
+        },
+        {
+          "client_id": "963805026473-k7esa517oo1ai271ao2dn9lm0coqt0r5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvrkvOt__TTKo3mrk2MgzHzSrKbtpge-I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963805026473-k7esa517oo1ai271ao2dn9lm0coqt0r5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963805026473:android:9774eac363e09cf1",
+        "android_client_info": {
+          "package_name": "com.bmsit.marzil.riderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963805026473-k7esa517oo1ai271ao2dn9lm0coqt0r5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvrkvOt__TTKo3mrk2MgzHzSrKbtpge-I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
