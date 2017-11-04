@@ -88,6 +88,7 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
                         mMap.clear();
                         mMap.addMarker(new MarkerOptions().position(latLng).icon(BitmapDescriptorFactory.fromResource(R.drawable.cabicon)));
                         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,15));
+
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
