@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent=new Intent(MainActivity.this,RiderMapActivity.class);
+                intent.putExtra("username",loginid.getText().toString());
                 startActivity(intent);
 
             }

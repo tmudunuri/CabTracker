@@ -1,5 +1,6 @@
 package com.bmsit.marzil.riderapp;
 
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -15,12 +16,18 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class RiderMapActivity extends FragmentActivity implements OnMapReadyCallback {
 
-    private GoogleMap mMap;
-    private FirebaseDatabase firebaseDatabase;
+    private GoogleMap mMap;private FirebaseDatabase firebaseDatabase=FirebaseDatabase.getInstance();
+    private DatabaseReference mRootReference=firebaseDatabase.getReference();
+    private DatabaseReference mTypeReference=mRootReference.child("Riders");
+    private DatabaseReference mLocReference;//=mRootReference.child(varname);
+    private DatabaseReference mLatReference;//=mLocReference.child("lat    ");
+    private DatabaseReference mLongReference;//=mLocReference.child("long");
+
     private LocationManager locationManager;
 
 
@@ -32,6 +39,11 @@ public class RiderMapActivity extends FragmentActivity implements OnMapReadyCall
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        Intent intent=getIntent();
+        String varname=intent.getStringExtra("username");
+        mLocReference=mTypeReference.child(varname);
+        mLatReference=mLocReference.child("lat");
+        mLongReference=mLocReference.child("long");
 
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
 
@@ -52,7 +64,9 @@ public class RiderMapActivity extends FragmentActivity implements OnMapReadyCall
 
                 mMap.clear();
                 double latitude=location.getLatitude();
+                mLatReference.setValue(latitude);
                 double longitude=location.getLongitude();
+                mLongReference.setValue(longitude);
                 LatLng latlng=new LatLng(latitude,longitude);
                 mMap.addMarker(new MarkerOptions().position(latlng).icon(BitmapDescriptorFactory.fromResource(R.drawable.usericon)));
                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latlng,14));
