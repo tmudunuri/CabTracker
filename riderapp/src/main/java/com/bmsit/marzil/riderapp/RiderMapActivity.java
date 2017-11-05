@@ -23,7 +23,7 @@ public class RiderMapActivity extends FragmentActivity implements OnMapReadyCall
 
     private GoogleMap mMap;private FirebaseDatabase firebaseDatabase=FirebaseDatabase.getInstance();
     private DatabaseReference mRootReference=firebaseDatabase.getReference();
-    private DatabaseReference mTypeReference=mRootReference.child("Riders");
+    private DatabaseReference mTypeReference=mRootReference.child("riders");
     private DatabaseReference mLocReference;//=mRootReference.child(varname);
     private DatabaseReference mLatReference;//=mLocReference.child("lat    ");
     private DatabaseReference mLongReference;//=mLocReference.child("long");

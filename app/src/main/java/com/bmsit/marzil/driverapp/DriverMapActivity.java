@@ -67,6 +67,8 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
                 for(DataSnapshot snapshot: dataSnapshot.getChildren())
                 {
                     RiderDataClass data= snapshot.getValue(RiderDataClass.class);
+                    Toast.makeText(DriverMapActivity.this, data.cab, Toast.LENGTH_LONG).show();
+                    rider=mMap.addMarker(new MarkerOptions().position(new LatLng(data.lat,data.lng)));
                 }
             }
 
@@ -99,17 +101,21 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
                     double longitude=location.getLongitude();
                     mLocReference.child("lng").setValue(longitude);
                     Geocoder geocoder=new Geocoder(getApplicationContext());
+
+
                     LatLng driverloc=new LatLng(latitude,longitude);
                     try {
                         List<Address> addresses=
                                 geocoder.getFromLocation(latitude,longitude,1);
+
                         if(driver==null)
                                 driver=mMap.addMarker(new MarkerOptions().position(driverloc));
+
                         else
                             {
                                 driver.setPosition(driverloc);
                             }
-                        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(driverloc,15));
+                        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(driverloc,12));
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
