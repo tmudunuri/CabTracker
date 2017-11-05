@@ -60,6 +60,8 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
         String varname=intent.getStringExtra("regpass");
         mLocReference=mTypeReference.child(varname);
         final DecimalFormat format=new DecimalFormat("#0.0000");
+        driver.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.cabicon));
+        rider.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.usericon));
 
         mRootReference.child("riders").orderByChild("cab").equalTo(varname).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -110,7 +112,6 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
 
                         if(driver==null)
                                 driver=mMap.addMarker(new MarkerOptions().position(driverloc));
-
                         else
                             {
                                 driver.setPosition(driverloc);
