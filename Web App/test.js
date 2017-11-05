@@ -29,6 +29,7 @@ $('#get_map').click(function initMap() {
 
 
     //temp
+    var cabtmp = ['h'];
         var driversRef = firebase.database().ref().child('drivers'); 
        cMarkers[100] =  new google.maps.Marker({
         position: uluru,
@@ -85,55 +86,63 @@ $('#get_map').click(function initMap() {
 
 
 
-                 var ridersRef = firebase.database().ref().child('riders'); 
-       pMarkers[100] =  new google.maps.Marker({
-        position: uluru,
-        map: map,
-        title: 'adithya',
-        label: 'adithya',
-        icon: psIcon
-      });
+       var ridersRef = firebase.database().ref().child('riders'); 
+
 
       ridersRef.on('value', function(snapshot){
           pLat[100] = snapshot.child('adithya/lat').val();
           pLong[100] = snapshot.child('adithya/lng').val();
+          cabtmp[100] = snapshot.child('adithya/cab').val();
           });
+
+        pMarkers[100] =  new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'adithya',
+        label: 'adithya -'+ cabtmp[100],
+        icon: psIcon
+      });
 
           setInterval(function(){
               pMarkers[100].setPosition(new google.maps.LatLng(pLat[100],pLong[100]));
           }, 2000);
 
 
-       pMarkers[101] =  new google.maps.Marker({
-        position: uluru,
-        map: map,
-        title: 'agneya',
-        label: 'agneya',
-        icon: psIcon
-      });
 
       ridersRef.on('value', function(snapshot){
           pLat[101] = snapshot.child('agneya/lat').val();
           pLong[101] = snapshot.child('agneya/lng').val();
+          cabtmp[101] = snapshot.child('agneya/cab').val();
           });
+
+        pMarkers[101] =  new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'agneya',
+        label: 'agneya -'+cabtmp[101],
+        icon: psIcon
+      });
 
           setInterval(function(){
               pMarkers[101].setPosition(new google.maps.LatLng(pLat[101],pLong[101]));
           }, 2000);
 
 
-        pMarkers[102] =  new google.maps.Marker({
-        position: uluru,
-        map: map,
-        title: 'ameya',
-        label: 'ameya',
-        icon: psIcon
-      });
+
 
       ridersRef.on('value', function(snapshot){
           pLat[102] = snapshot.child('ameya/lat').val();
           pLong[102] = snapshot.child('ameya/lng').val();
+          cabtmp[102] = snapshot.child('ameya/cab').val();
           });
+
+        pMarkers[102] =  new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'ameya',
+        label: 'ameya -'+cabtmp[102],
+        icon: psIcon
+      });
 
           setInterval(function(){
               pMarkers[102].setPosition(new google.maps.LatLng(pLat[102],pLong[102]));
