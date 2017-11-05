@@ -20,11 +20,128 @@ var passengersRef = firebase.database().ref().child('passengers');
 
 
 $('#get_map').click(function initMap() {
-    uluru = {lat: 13, lng: 77.58};
+    //uluru = {lat: 13, lng: 77.58};
+    uluru = {lat: cLat[100], lng: cLong[100]};
     map = new google.maps.Map(document.getElementById('map'), {
       zoom: 12,
       center: uluru
     });
+
+
+    //temp
+        var driversRef = firebase.database().ref().child('drivers'); 
+       cMarkers[100] =  new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'KA01',
+        label: '01',
+        icon: cabIcon
+      });
+
+      driversRef.on('value', function(snapshot){
+          cLat[100] = snapshot.child('KA01/lat').val();
+          cLong[100] = snapshot.child('KA01/lng').val();
+          });
+
+          setInterval(function(){
+              cMarkers[100].setPosition(new google.maps.LatLng(cLat[100],cLong[100]));
+          }, 2000);
+
+
+       cMarkers[101] =  new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'KA02',
+        label: '02',
+        icon: cabIcon
+      });
+
+      driversRef.on('value', function(snapshot){
+          cLat[101] = snapshot.child('KA02/lat').val();
+          cLong[101] = snapshot.child('KA02/lng').val();
+          });
+
+          setInterval(function(){
+              cMarkers[101].setPosition(new google.maps.LatLng(cLat[101],cLong[101]));
+          }, 2000);
+
+
+        cMarkers[102] =  new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'KATest',
+        label: 'Test',
+        icon: cabIcon
+      });
+
+      driversRef.on('value', function(snapshot){
+          cLat[102] = snapshot.child('KATest/lat').val();
+          cLong[102] = snapshot.child('KATest/lng').val();
+          });
+
+          setInterval(function(){
+              cMarkers[102].setPosition(new google.maps.LatLng(cLat[102],cLong[102]));
+          }, 2000);
+
+
+
+                 var ridersRef = firebase.database().ref().child('riders'); 
+       pMarkers[100] =  new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'adithya',
+        label: 'adithya',
+        icon: psIcon
+      });
+
+      ridersRef.on('value', function(snapshot){
+          pLat[100] = snapshot.child('adithya/lat').val();
+          pLong[100] = snapshot.child('adithya/lng').val();
+          });
+
+          setInterval(function(){
+              pMarkers[100].setPosition(new google.maps.LatLng(pLat[100],pLong[100]));
+          }, 2000);
+
+
+       pMarkers[101] =  new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'agneya',
+        label: 'agneya',
+        icon: psIcon
+      });
+
+      ridersRef.on('value', function(snapshot){
+          pLat[101] = snapshot.child('agneya/lat').val();
+          pLong[101] = snapshot.child('agneya/lng').val();
+          });
+
+          setInterval(function(){
+              pMarkers[101].setPosition(new google.maps.LatLng(pLat[101],pLong[101]));
+          }, 2000);
+
+
+        pMarkers[102] =  new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'ameya',
+        label: 'ameya',
+        icon: psIcon
+      });
+
+      ridersRef.on('value', function(snapshot){
+          pLat[102] = snapshot.child('ameya/lat').val();
+          pLong[102] = snapshot.child('ameya/lng').val();
+          });
+
+          setInterval(function(){
+              pMarkers[102].setPosition(new google.maps.LatLng(pLat[102],pLong[102]));
+          }, 2000);
+
+
+
+          //endtemp
 });
 
 
