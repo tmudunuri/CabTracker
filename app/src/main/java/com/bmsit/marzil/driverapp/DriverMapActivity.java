@@ -22,6 +22,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -60,8 +62,7 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
         String varname=intent.getStringExtra("regpass");
         mLocReference=mTypeReference.child(varname);
         final DecimalFormat format=new DecimalFormat("#0.0000");
-        driver.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.cabicon));
-        rider.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.usericon));
+
 
         mRootReference.child("riders").orderByChild("cab").equalTo(varname).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -70,7 +71,7 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
                 {
                     RiderDataClass data= snapshot.getValue(RiderDataClass.class);
                     Toast.makeText(DriverMapActivity.this, data.cab, Toast.LENGTH_LONG).show();
-                    rider=mMap.addMarker(new MarkerOptions().position(new LatLng(data.lat,data.lng)));
+                    rider=mMap.addMarker(new MarkerOptions().position(new LatLng(data.lat,data.lng)).icon(BitmapDescriptorFactory.fromResource(R.drawable.usericon)));
                 }
             }
 
@@ -111,12 +112,18 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
                                 geocoder.getFromLocation(latitude,longitude,1);
 
                         if(driver==null)
-                                driver=mMap.addMarker(new MarkerOptions().position(driverloc));
+                                driver=mMap.addMarker(new MarkerOptions().position(driverloc).icon(BitmapDescriptorFactory.fromResource(R.drawable.cabicon)));
                         else
                             {
                                 driver.setPosition(driverloc);
                             }
-                        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(driverloc,12));
+                        LatLngBounds.Builder builder = new LatLngBounds.Builder();
+                        builder.include(rider.getPosition());
+                        builder.include(driver.getPosition());
+                        LatLngBounds bounds = builder.build();
+                        mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds,50));
+
+
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -161,7 +168,6 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
         // Add a marker in Sydney and move the camera
         //LatLng sydney = new LatLng(-34, 151);
         //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));

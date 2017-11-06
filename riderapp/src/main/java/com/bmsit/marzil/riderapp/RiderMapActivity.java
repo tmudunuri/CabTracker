@@ -5,6 +5,7 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.provider.ContactsContract;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -24,9 +25,10 @@ public class RiderMapActivity extends FragmentActivity implements OnMapReadyCall
     private GoogleMap mMap;private FirebaseDatabase firebaseDatabase=FirebaseDatabase.getInstance();
     private DatabaseReference mRootReference=firebaseDatabase.getReference();
     private DatabaseReference mTypeReference=mRootReference.child("riders");
-    private DatabaseReference mLocReference;//=mRootReference.child(varname);
+    private DatabaseReference mNamReference;//=mRootReference.child(varname);
     private DatabaseReference mLatReference;//=mLocReference.child("lat    ");
     private DatabaseReference mLongReference;//=mLocReference.child("long");
+    private DatabaseReference mRegReference;
 
     private LocationManager locationManager;
 
@@ -41,9 +43,6 @@ public class RiderMapActivity extends FragmentActivity implements OnMapReadyCall
         mapFragment.getMapAsync(this);
         Intent intent=getIntent();
         String varname=intent.getStringExtra("username");
-        mLocReference=mTypeReference.child(varname);
-        mLatReference=mLocReference.child("lat");
-        mLongReference=mLocReference.child("long");
 
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
 
