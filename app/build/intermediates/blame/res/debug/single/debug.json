@@ -40,16 +40,16 @@
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable/abc_vector_test.xml"
     },
     {
-        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_light_focused.9.png.flat",
-        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.0.aar/17854147a2ec8e04d0a06cf579552018/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_focused.9.png"
+        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
+        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
-        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
-        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
+        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_light_focused.9.png.flat",
+        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.0.aar/17854147a2ec8e04d0a06cf579552018/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_focused.9.png"
     },
     {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/layout_abc_screen_simple_overlay_action_mode.xml.flat",
@@ -96,12 +96,12 @@
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/play-services-base-11.4.2.aar/0a7d06e33dfe8e821822817f961d12e9/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
-        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal.9.png.flat",
-        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.0.aar/17854147a2ec8e04d0a06cf579552018/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal.9.png"
-    },
-    {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal.9.png.flat",
+        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.0.aar/17854147a2ec8e04d0a06cf579552018/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal.9.png"
     },
     {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -120,28 +120,28 @@
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_common_ic_googleplayservices.png.flat",
-        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.0.aar/17854147a2ec8e04d0a06cf579552018/res/drawable-ldpi-v4/common_ic_googleplayservices.png"
-    },
-    {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-ldpi-v4_common_ic_googleplayservices.png.flat",
+        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.0.aar/17854147a2ec8e04d0a06cf579552018/res/drawable-ldpi-v4/common_ic_googleplayservices.png"
     },
     {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable-xxhdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
     },
     {
-        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
-        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_48dp.png.flat",
+        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable-mdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/13c6af22e7831b746e73e5183629a023/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_48dp.png.flat",
-        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable-mdpi-v4/abc_ic_star_black_48dp.png"
+        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_thumb_material.xml.flat",
@@ -208,12 +208,12 @@
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
-        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/aa9cb136128bb0de41ef5a34d41440eb/res/layout/notification_media_cancel_action.xml"
-    },
-    {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable-xxxhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
+        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/aa9cb136128bb0de41ef5a34d41440eb/res/layout/notification_media_cancel_action.xml"
     },
     {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable_abc_textfield_search_material.xml.flat",
@@ -244,24 +244,24 @@
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/13c6af22e7831b746e73e5183629a023/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_plus_signin_btn_icon_light_focused.9.png.flat",
-        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.0.aar/17854147a2ec8e04d0a06cf579552018/res/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_focused.9.png"
-    },
-    {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_icon_light_normal.9.png.flat",
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.0.aar/17854147a2ec8e04d0a06cf579552018/res/drawable-mdpi-v4/common_google_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_plus_signin_btn_icon_light_focused.9.png.flat",
+        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.0.aar/17854147a2ec8e04d0a06cf579552018/res/drawable-xhdpi-v4/common_plus_signin_btn_icon_light_focused.9.png"
     },
     {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/anim_abc_popup_exit.xml.flat",
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/anim/abc_popup_exit.xml"
     },
     {
-        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4_common_plus_signin_btn_text_dark_normal.9.png.flat",
-        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.0.aar/17854147a2ec8e04d0a06cf579552018/res/drawable-tvdpi-v4/common_plus_signin_btn_text_dark_normal.9.png"
-    },
-    {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/anim_abc_fade_in.xml.flat",
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4_common_plus_signin_btn_text_dark_normal.9.png.flat",
+        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/play-services-base-9.0.0.aar/17854147a2ec8e04d0a06cf579552018/res/drawable-tvdpi-v4/common_plus_signin_btn_text_dark_normal.9.png"
     },
     {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -272,12 +272,12 @@
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/anim/tooltip_exit.xml"
     },
     {
-        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
-        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
+        "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -458,6 +458,10 @@
     {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_radio.xml.flat",
         "source": "/home/marzil/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/f7cf6e453aed179153aae02a4b5bcac7/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/drawable_usericon.png.flat",
+        "source": "/home/marzil/AndroidStudioProjects/UberClone/app/src/main/res/drawable/usericon.png"
     },
     {
         "merged": "/home/marzil/AndroidStudioProjects/UberClone/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_material.xml.flat",
