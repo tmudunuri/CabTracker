@@ -10,7 +10,6 @@ firebase.initializeApp(config);
 var customerRequestRef = firebase.database().ref('customerRequestTest');
 
 var rABS = true;
-var HTMLOUT = document.getElementById('htmlout');
 var workbook;
 var OUT = document.getElementById('out');
 var HTMLOUT = document.getElementById('htmlout');
@@ -35,8 +34,8 @@ var HTMLOUT = document.getElementById('htmlout');
 
       var first_sheet_name = workbook.SheetNames[0];
       var worksheet = workbook.Sheets[first_sheet_name];
-      console.log("Wohoo");
-      // HTMLOUT.innerHTML = XLSX.utils.sheet_to_html(worksheet);
+      console.log("wohoo");
+      HTMLOUT.innerHTML= XLSX.utils.sheet_to_html(worksheet);
       var output = XLSX.utils.sheet_to_json(worksheet);
       console.log(output);
       strout = JSON.stringify(output, 2, 2);
@@ -44,12 +43,14 @@ var HTMLOUT = document.getElementById('htmlout');
       for (i in output) {
          var eid = output[i].ID, name = output[i].Name, time = output[i].P_Time, type = output[i].Type;
         function writeBookData(eid, name, time, type) {
-          firebase.database().ref('customerRequestTest/' + eid).update({
+          console.log("sup");
+          firebase.database().ref('customerRequestTest/'+ eid).update({
             ename: name,
             etime: time,
             type: type
           });
         }
+        writeBookData(eid, name, time, type);
       }
     };
 
@@ -67,3 +68,16 @@ var HTMLOUT = document.getElementById('htmlout');
   drop.addEventListener('dragover', handleDragover, false);
   drop.addEventListener('drop', handleDrop, false);
 })();
+
+// for (i in output) {
+//   var eid = output[i].ID, name = output[i].Name, Class = output[i].Class, address = output[i].address;
+//   function writeEmpData(eid, name, Class, address) {
+//     console.log("sup");
+//     firebase.database().ref('empDetailsTest/'+ eid).update({
+//       ename: name,
+//       class: Class,
+//       address: address
+//     });
+//   }
+//   writeEmpData(eid, name, Class, address);
+// }
