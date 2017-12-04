@@ -19,9 +19,9 @@ var config = {
   messagingSenderId: "963805026473"
 };
 firebase.initializeApp(config);
-var driversAvailableRef = firebase.database().ref('driversAvailable');
-var customerRequestRef = firebase.database().ref('customerRequest'); 
-var driversWorkingRef = firebase.database().ref('driversWorking');  
+var driversAvailableRef = firebase.database().ref('driversAvailable1');
+var customerRequestRef = firebase.database().ref('customerRequest1'); 
+var driversWorkingRef = firebase.database().ref('driversWorking1');  
 
 //Load Map
 $('#load_map').click(function initMap() {
