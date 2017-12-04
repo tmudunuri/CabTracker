@@ -19,9 +19,9 @@ var config = {
   messagingSenderId: "963805026473"
 };
 firebase.initializeApp(config);
-var driversAvailableRef = firebase.database().ref('driversAvailable1');
-var customerRequestRef = firebase.database().ref('customerRequest1'); 
-var driversWorkingRef = firebase.database().ref('driversWorking1');  
+var driversAvailableRef = firebase.database().ref('driversAvailableTest1');
+var customerRequestRef = firebase.database().ref('customerRequestTest1'); 
+var driversWorkingRef = firebase.database().ref('driversWorkingTest1');  
 
 //Load Map
 $('#load_map').click(function initMap() {
@@ -46,7 +46,6 @@ var key;
     		key = childSnapshot.key;
     		daLat[key] = snapshot.child(key + '/l/0').val();
     		daLong[key] = snapshot.child(key + '/l/1').val();
-
     		uluru = {lat: Number(daLat[key]), lng: Number(daLong[key])};
     		daMarkers[key] =  new google.maps.Marker({
     			position: uluru,
