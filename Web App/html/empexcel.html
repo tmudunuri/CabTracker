@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://bootswatch.com/3/paper/bootstrap.min.css">
+  <link href="../css/bookexcel.css" rel="stylesheet">
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzrQ0o6DKxrE72Vo7X4nVNoEgGrsjKCQo&libraries=places"></script>
+  <title>Employee Upload</title>
+</head>
+
+<body>
+  <div class="page-header">
+
+    <h1>
+      Vivek Traders
+      <small>Cab Tracker</small>
+   </h1>
+
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+           Upload Employee Details
+        </h3>
+    </div>
+
+    <div class="panel-body">
+      <form role="form">
+
+        <div class="form-group">
+          <!-- <label for="xlf" class="text-primary">File input</label>
+          <input type="file" id="xlf">
+          <p class="help-block">Upload an Excel File only.</p> -->
+          <h4>Drag and drop files below</h4>
+          <div class="upload-drop-zone" id="drop">
+            Just drag and drop files here
+          </div>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary disabled hidden" onclick="">Submit</button>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+         Employee Details
+      </h3>
+    </div>
+
+    <div class="panel-body">
+      <pre id="out"></pre>
+      <div id="htmlout"></div>
+    </div>
+  </div>
+  <script src="../js/empexcel.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../js/shim.js" charset="utf-8"></script>
+  <script src="../js/xlsx.full.min.js"></script>
+  <script src="../js/cpexcel.js" charset="utf-8"></script>
+  <script src="../js/jszip.js" charset="utf-8"></script>
+</body>
+
+</html>
