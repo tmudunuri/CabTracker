@@ -16,9 +16,9 @@ var config = {
   messagingSenderId: "963805026473"
 };
 firebase.initializeApp(config);
-var driversAvailableRef = firebase.database().ref('driversAvailableTest');
-var customerRequestRef = firebase.database().ref('customerRequestTest'); 
-var driversWorkingRef = firebase.database().ref('driversWorkingTest');  
+var driversAvailableRef = firebase.database().ref('driversAvailableTest1');
+var customerRequestRef = firebase.database().ref('customerRequestTest1'); 
+var driversWorkingRef = firebase.database().ref('driversWorkingTest1');  
 
 var addr = [], key;
 
@@ -166,14 +166,14 @@ function submit_by_id() {
 	});*/
 
     geocoder.geocode( { 'address': address}, function(results) {
-        ddLoc = results[0].place_id;
-		firebase.database().ref('driversAvailableTest/' + driverSelect).update({
+        var ddLoc = results[0].place_id;
+		firebase.database().ref('driversAvailableTest1/' + driverSelect).update({
 	    dLoc: ddLoc
 	  });
 
 
-		firebase.database().ref('customerRequestTest/' + passengerSelect).update({
-	    dLoc: dLoc
+		firebase.database().ref('customerRequestTest1/' + passengerSelect).update({
+	    dLoc: ddLoc
 	  });
     });
 	
@@ -189,13 +189,13 @@ function submit_by_id() {
 	    1: llng
 	  });*/
 
-	  	firebase.database().ref('driversAvailableTest/' + driverSelect).update({
+	  	firebase.database().ref('driversAvailableTest1/' + driverSelect).update({
 	    rType: rType,
 	    passAss: passengerSelect
 	  });
 
 
-	firebase.database().ref('customerRequestTest/' + passengerSelect).update({
+	firebase.database().ref('customerRequestTest1/' + passengerSelect).update({
     rType: rType,
  	cabAss: driverSelect
   });
