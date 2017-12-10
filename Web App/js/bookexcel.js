@@ -11,6 +11,7 @@ var ref = firebase.database().ref('/')
 var empDetailsRef = firebase.database().ref('empDetailsTest');
 var customerRequestRef = firebase.database().ref('customerRequestTest');
 var driverDetailsRef = firebase.database().ref('driverDetailsTest');
+var requestTable = document.getElementById("passengerRequests");
 
 var rABS = true;
 var workbook;
@@ -37,12 +38,11 @@ var HTMLOUT = document.getElementById('htmlout');
       //
       var first_sheet_name = workbook.SheetNames[0];
       var worksheet = workbook.Sheets[first_sheet_name];
-      console.log("wohoo");
-      HTMLOUT.innerHTML = XLSX.utils.sheet_to_html(worksheet);
+      // HTMLOUT.innerHTML = XLSX.utils.sheet_to_html(worksheet);
       var output = XLSX.utils.sheet_to_json(worksheet);
       console.log(output);
-      strout = JSON.stringify(output, 2, 2);
-      OUT.textContent = strout;
+      // strout = JSON.stringify(output, 2, 2);
+      // OUT.textContent = strout;
       //Write booking details to database
       firebase.database().ref('customerRequestTest/').set({
         null: null
@@ -50,13 +50,29 @@ var HTMLOUT = document.getElementById('htmlout');
       firebase.database().ref('tripTest/').set({
         null: null
       })
+
+      output.sort(function(a, b) {
+        return a.ID - b.ID
+      });
+
       for (i in output) {
         var eid = output[i].ID,
+          name = output[i].Name,
           time = output[i].P_Time,
           type = output[i].Type;
 
+        row = requestTable.insertRow(-1);
+        c1 = row.insertCell(0);
+        c2 = row.insertCell(1);
+        c3 = row.insertCell(2);
+        c4 = row.insertCell(3);
+
+        c1.innerHTML = eid;
+        c2.innerHTML = name;
+        c3.innerHTML = time;
+        c4.innerHTML = type;
+
         function writeBookData(eid, time, type) {
-          console.log("sup");
           firebase.database().ref('customerRequestTest/' + eid).update({
             etime: time,
             type: type
