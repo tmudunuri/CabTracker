@@ -15,7 +15,6 @@ var mybtn = document.getElementById('mybtn');
 
 // mybtn.addEventListener("click", function(e) {
 function book() {
-  alert("Booked")
   var ekey = [],
     eaddr = [],
     etime = [],
