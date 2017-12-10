@@ -7,7 +7,10 @@ var config = {
   messagingSenderId: "963805026473"
 };
 firebase.initializeApp(config);
+var ref = firebase.database().ref('/')
+var empDetailsRef = firebase.database().ref('empDetailsTest');
 var customerRequestRef = firebase.database().ref('customerRequestTest');
+var driverDetailsRef = firebase.database().ref('driverDetailsTest');
 
 var rABS = true;
 var workbook;
@@ -31,29 +34,37 @@ var HTMLOUT = document.getElementById('htmlout');
         type: rABS ? 'binary' : 'array'
       });
       // Work on the Excel File Here
-
+      //
       var first_sheet_name = workbook.SheetNames[0];
       var worksheet = workbook.Sheets[first_sheet_name];
       console.log("wohoo");
-      HTMLOUT.innerHTML= XLSX.utils.sheet_to_html(worksheet);
+      HTMLOUT.innerHTML = XLSX.utils.sheet_to_html(worksheet);
       var output = XLSX.utils.sheet_to_json(worksheet);
       console.log(output);
       strout = JSON.stringify(output, 2, 2);
       OUT.textContent = strout;
+      //Write booking details to database
+      firebase.database().ref('customerRequestTest/').set({
+        null: null
+      })
+      firebase.database().ref('tripTest/').set({
+        null: null
+      })
       for (i in output) {
-         var eid = output[i].ID, name = output[i].Name, time = output[i].P_Time, type = output[i].Type;
-        function writeBookData(eid, name, time, type) {
+        var eid = output[i].ID,
+          time = output[i].P_Time,
+          type = output[i].Type;
+
+        function writeBookData(eid, time, type) {
           console.log("sup");
-          firebase.database().ref('customerRequestTest/'+ eid).update({
-            ename: name,
+          firebase.database().ref('customerRequestTest/' + eid).update({
             etime: time,
             type: type
           });
-        }
-        writeBookData(eid, name, time, type);
+        };
+        writeBookData(eid, time, type);
       }
     };
-
 
     if (rABS) reader.readAsBinaryString(f);
     else reader.readAsArrayBuffer(f);
@@ -68,16 +79,3 @@ var HTMLOUT = document.getElementById('htmlout');
   drop.addEventListener('dragover', handleDragover, false);
   drop.addEventListener('drop', handleDrop, false);
 })();
-
-// for (i in output) {
-//   var eid = output[i].ID, name = output[i].Name, Class = output[i].Class, address = output[i].address;
-//   function writeEmpData(eid, name, Class, address) {
-//     console.log("sup");
-//     firebase.database().ref('empDetailsTest/'+ eid).update({
-//       ename: name,
-//       class: Class,
-//       address: address
-//     });
-//   }
-//   writeEmpData(eid, name, Class, address);
-// }

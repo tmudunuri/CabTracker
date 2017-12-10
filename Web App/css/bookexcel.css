@@ -1,15 +1,21 @@
-.page-header{
+.page-header {
   margin-top: 0px;
   padding-top: 30px;
   padding-left: 10px;
 }
 
-#drop{
-	border:2px dashed #bbb;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border-radius:5px;
-	padding:25px;
-	text-align: center;
-	font:20pt bold,"Vollkorn";color:#bbb
+#drop {
+  border: 2px dashed #bbb;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 25px;
+  text-align: center;
+  font: 20pt bold, "Vollkorn";
+  color: #bbb
+}
+
+#mybtn {
+  margin-left: 15px;
+  margin-bottom: 15px;
 }
