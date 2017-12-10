@@ -13,8 +13,7 @@ var driverDetailsRef = firebase.database().ref('driverDetailsTest');
 
 var mybtn = document.getElementById('mybtn');
 
-// mybtn.addEventListener("click", function(e) {
-function book() {
+mybtn.onclick = function() {
   var ekey = [],
     eaddr = [],
     etime = [],
@@ -51,6 +50,7 @@ function book() {
   for (var x in ekey) {
     tkey.push(firebase.database().ref('tripTest/').push().key);
     console.log(tkey[x]);
+    mybtn.className += " disabled hidden";
     firebase.database().ref('tripTest/' + tkey[x]).update({
       ekey: ekey[x],
       dkey: dkey[x],
@@ -59,4 +59,3 @@ function book() {
     });
   }
 };
-// }, false);
