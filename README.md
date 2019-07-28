@@ -13,19 +13,22 @@ The app syncs with a separate Android application which helps users and cab driv
  - [ ] Excel-based bulk cab booking
 
 ## Screenshots
-
+##### Map View
 ![Map View](https://raw.githubusercontent.com/tmudunuri/CabTracker/master/README/01_Map.PNG)
-
+##### Bookings Table
 ![Bookings Table](https://raw.githubusercontent.com/tmudunuri/CabTracker/master/README/02_Bookings.PNG)
 
+##### Manual Booking
 ![Manual Booking](https://raw.githubusercontent.com/tmudunuri/CabTracker/master/README/03_BookModal.PNG)
 
+##### Excel Booking
 ![Excel Booking](https://raw.githubusercontent.com/tmudunuri/CabTracker/master/README/04_ExcelBook.PNG)
 
+##### Firebase Realtime DB
 ![Firebase DB](https://raw.githubusercontent.com/tmudunuri/CabTracker/master/README/05_Firebase.PNG)
 
 ## Developers
 
-**Agneya Koushik** — @Agneya2
-**Thrivikram Mudunuri** — [@tmudunuri](https://github.com/tmudunuri)
-**Adithya Vasisth** — @adithyavasisth
+**Agneya Koushik** â€” [@Agneya2](https://github.com/Agneya2)
+**Thrivikram Mudunuri** â€” [@tmudunuri](https://github.com/tmudunuri)
+**Adithya Vasisth** â€” [@adithyavasisth](https://github.com/adithyavasisth)
