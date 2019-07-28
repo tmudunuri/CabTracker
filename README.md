@@ -30,5 +30,7 @@ The app syncs with a separate Android application which helps users and cab driv
 ## Developers
 
 **Agneya Koushik** — [@Agneya2](https://github.com/Agneya2)
+
 **Thrivikram Mudunuri** — [@tmudunuri](https://github.com/tmudunuri)
+
 **Adithya Vasisth** — [@adithyavasisth](https://github.com/adithyavasisth)
